@@ -1,23 +1,146 @@
-<!-- <!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            overflow: hidden; /* Prevents horizontal scrollbar */
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .project {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #projects, #resume {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+            border-radius: 20px;
+        }
+
+        /* Flying comments */
+        .comment-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none; /* Allows clicking through comments */
+            z-index: -1; /* Ensure comments are behind other content */
+        }
+
+        .comment {
+            position: absolute;
+            animation: fly 10s linear infinite; /* Adjust animation duration here */
+            pointer-events: none; /* Allows clicking through comments */
+        }
+
+        @keyframes fly {
+            from {
+                transform: translate(-100%, -100%);
+            }
+            to {
+                transform: translate(100%, 100%);
+            }
+        }
+
+        /* Create small flying universe comments using pseudo-elements */
+        .comment::before {
+            content: "★"; /* Star character for the comment */
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+            animation: twinkle 3s linear infinite; /* Animation for twinkling effect */
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <img src="images/360_F_342717213_y9VGbYHJPb1dCVC3Vw6PUCVmhHBAoE0c.webp" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">HIRE ME</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HIRE ME</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <!-- Project 1: Waste Food Management System -->
+        <div class="project mb-5">
+            <h3>Waste Food Management System</h3>
+            <p>Lead the development of a Food Donation Management System.</p>
+            <!-- Bootstrap image -->
+            <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Waste Food Management System">
+        </div>
+
+        <!-- Project 2: Bank Management System -->
+        <div class="project">
+            <h3>Bank Management System</h3>
+            <p>Developed a Python program for basic banking operations.</p>
+            <!-- Bootstrap image -->
+            <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Bank Management System">
+        </div>
+    </section>
+
+    <section id="resume" class="container mt-5">
+        <h2 class="text-center mb-4">Resume</h2>
+        <!-- Add Abhang Karode's resume details here -->
+        <!-- Resume details -->
+    </section>
+
+    <!-- Flying comments container -->
+    <div class="comment-container">
+        <!-- Flying comments -->
+        <div class="comment" style="top: 20%; left: 30%;"></div>
+        <div class="comment" style="top: 50%; left: 60%;"></div>
+        <div class="comment" style="top: 70%; left: 10%;"></div>
+        <div class="comment" style="top: 80%; left: 80%;"></div>
+        <!-- Add more comments as needed -->
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
