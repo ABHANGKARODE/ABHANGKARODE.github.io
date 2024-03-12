@@ -10,6 +10,7 @@
             background-color: #000;
             color: #fff;
             overflow: hidden; /* Prevents horizontal scrollbar */
+            position: relative; /* Needed for positioning the background comets */
         }
 
         .navbar {
@@ -29,51 +30,44 @@
             border-radius: 20px;
         }
 
-        /* Flying comments */
-        .comment-container {
+        /* Flying comets */
+        .comet-container {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            pointer-events: none; /* Allows clicking through comments */
-            z-index: -1; /* Ensure comments are behind other content */
+            pointer-events: none;
+            z-index: -1;
+            background: url('https://media.giphy.com/media/RyXVu4ZW454IM/giphy.gif') repeat-y; /* Replace with your comet image */
+            animation: move-comets 30s linear infinite; /* Adjust animation duration as needed */
         }
 
-        .comment {
-            position: absolute;
-            animation: fly 10s linear infinite; /* Adjust animation duration here */
-            pointer-events: none; /* Allows clicking through comments */
-        }
-
-        @keyframes fly {
+        @keyframes move-comets {
             from {
-                transform: translate(-100%, -100%);
+                transform: translateX(0%);
             }
             to {
-                transform: translate(100%, 100%);
+                transform: translateX(100%);
             }
         }
 
-        /* Create small flying universe comments using pseudo-elements */
-        .comment::before {
-            content: "★"; /* Star character for the comment */
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
-            animation: twinkle 3s linear infinite; /* Animation for twinkling effect */
+        /* Ensure images are visible in all sections */
+        .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
         }
 
-        @keyframes twinkle {
-            0% {
-                opacity: 0.5;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.5;
-            }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
@@ -104,6 +98,14 @@
         </div>
     </nav>
 
+    <!-- Flying comets container -->
+    <div class="comet-container"></div>
+
+    <!-- Image containers -->
+    <div class="image-container" style="top: 10%;">
+        <img src="https://via.placeholder.com/400x200" alt="Image 1">
+    </div>
+
     <section id="projects" class="container mt-5">
         <h2 class="text-center mb-4">Projects</h2>
         <!-- Project 1: Waste Food Management System -->
@@ -129,14 +131,9 @@
         <!-- Resume details -->
     </section>
 
-    <!-- Flying comments container -->
-    <div class="comment-container">
-        <!-- Flying comments -->
-        <div class="comment" style="top: 20%; left: 30%;"></div>
-        <div class="comment" style="top: 50%; left: 60%;"></div>
-        <div class="comment" style="top: 70%; left: 10%;"></div>
-        <div class="comment" style="top: 80%; left: 80%;"></div>
-        <!-- Add more comments as needed -->
+    <!-- Image container -->
+    <div class="image-container" style="bottom: 10%;">
+        <img src="https://via.placeholder.com/400x200" alt="Image 2">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
