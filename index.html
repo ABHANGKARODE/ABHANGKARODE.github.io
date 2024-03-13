@@ -6,225 +6,64 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            overflow: hidden; /* Prevents horizontal scrollbar */
-            position: relative; /* Needed for positioning the background comets */
-        }
-
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .project {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        #projects, #resume {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 50px 0;
-            border-radius: 20px;
-        }
-
-        /* Flying comets */
-        .comet-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            background: url('https://media.giphy.com/media/RyXVu4ZW454IM/giphy.gif') repeat-y; /* Replace with your comet image */
-            animation: move-comets 30s linear infinite; /* Adjust animation duration as needed */
-        }
-
-        @keyframes move-comets {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(100%);
-            }
-        }
-
-        /* Ensure images are visible in all sections */
-        .image-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: -1;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            max-height: 100%;
-        }
+        /* Your CSS styles */
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HIRE ME</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <!-- Your navbar code here -->
 
     <!-- Flying comets container -->
     <div class="comet-container"></div>
 
     <!-- Image containers -->
-    <div class="image-container" style="top: 10%;">
-        <img src="https://via.placeholder.com/400x200" alt="Image 1">
-    </div>
+    <!-- Your image container code here -->
 
+    <!-- Projects section -->
     <section id="projects" class="container mt-5">
         <h2 class="text-center mb-4">Projects</h2>
         <!-- Project 1: Waste Food Management System -->
-        <div class="project mb-5">
-            <h3>Waste Food Management System</h3>
-            <p>Lead the development of a Food Donation Management System.</p>
-            <!-- Bootstrap image -->
-            <img src="https://via.placeholder.com/400x300" class="img-fluid rounded" alt="Waste Food Management System">
-        </div>
+        <!-- Your existing project divs here -->
 
         <!-- Project 2: Bank Management System -->
+        <!-- Your existing project divs here -->
+
+        <!-- Project 3: E-commerce Website -->
         <div class="project mb-5">
-            <h3>Bank Management System</h3>
-            <p>Developed a Python program for basic banking operations, including account creation, transaction processing, and balance management.</p>
+            <h3>E-commerce Website</h3>
+            <p>Designed and developed a fully functional e-commerce website for selling various products.</p>
             <p>Key Features:</p>
             <ul>
-                <li>Create and manage customer accounts</li>
-                <li>Perform deposit and withdrawal transactions</li>
-                <li>Check account balances</li>
-                <li>Handle invalid transaction types and insufficient funds scenarios</li>
+                <li>User authentication and authorization system</li>
+                <li>Product catalog with search and filter functionality</li>
+                <li>Shopping cart and checkout process</li>
+                <li>Order management system for users and administrators</li>
+                <li>Integration with payment gateways for secure transactions</li>
+            </ul>
+        </div>
+
+        <!-- Project 4: Data Analysis - Teacher Distribution -->
+        <div class="project mb-5">
+            <h3>Data Analysis - Teacher Distribution</h3>
+            <p>Led a project as a Data Analyst to analyze teacher distribution across government, private, and other sectors within a specific state.</p>
+            <p>Key Contributions:</p>
+            <ul>
+                <li>Conducted in-depth analysis to determine the optimal number of teachers required for each sector, considering factors such as gender and professional status.</li>
+                <li>Utilized pivot tables in Excel to efficiently organize and analyze large datasets containing information on teachers from various sectors.</li>
+                <li>Leveraged pivot tables to generate insights into teacher distribution based on factors such as gender and professional status across government, private, and other sectors.</li>
+                <li>Conducted detailed analysis using pivot tables to identify trends and patterns in teacher allocation within the specific state.</li>
+                <li>Presented pivot table-generated insights through visualizations and reports.</li>
             </ul>
         </div>
     </section>
 
-    <section id="resume" class="container mt-5">
-        <h2 class="text-center mb-4">Resume</h2>
-        <!-- Abhang Karode's resume details -->
-        <div class="project mb-5">
-            <h3>Data Analyst Resume</h3>
-            <p>I am an ambitious and motivated individual with a strong passion for data analysis and visualization.</p>
-            <p>Proficient in SQL, Python, PowerBI, and Excel, I am eager to apply my skills to make meaningful contributions in the field. I am committed to continuous learning and growth, and I thrive in collaborative environments.</p>
-            <h4>Experience:</h4>
-            <p>Data Analyst Intern | Zappkode Solutions, Nagpur (Nov 2023 - Present)</p>
-            <ul>
-                <li>Technology Exploration: Conducted comprehensive research on Python, SQL, and Excel to enhance data analysis capabilities and efficiency.</li>
-                <li>Data Analysis and Visualization: Utilized Python for data manipulation, Excel for visualization, and Power BI for basic dashboard development to analyze and present data effectively.</li>
-                <li>Developed basic interactive dashboards using Power BI, integrating multiple data sources to provide comprehensive insights for stakeholders.</li>
-                <li>Version Control Management: Collaborated with team members by branching and merging code, resolving conflicts, and ensuring code repository integrity.</li>
-                <li>Data Quality Management: Executed data cleaning techniques with Excel and SQL to maintain data integrity and accuracy, ensuring reliable analysis results.</li>
-                <li>Statistical Analysis: Applied basic statistical concepts to analyze data trends and patterns, supporting informed decision-making processes within the organization.</li>
-            </ul>
-            <h4>Skills:</h4>
-            <ul>
-                <li>Excel (Basic Functions and Formulas)</li>
-                <li>SQL (Basic Queries)</li>
-                <li>Statistical Analysis (Basic Concepts)</li>
-                <li>Power BI (Basic Dashboard Development)</li>
-                <li>Git (Version Control)</li>
-                <li>Data Visualization (Basic Charts and Graphs)</li>
-                <li>Data Cleaning (Basic Techniques)</li>
-                <li>Python (Fundamentals)</li>
-            </ul>
-            <h4>Academic Projects:</h4>
-            <ol>
-                <li>
-                    <h5>Waste Food Management System:</h5>
-                    <ul>
-                        <li>Lead the development of a Food Donation Management System.</li>
-                        <li>Oversaw the creation of a comprehensive platform connecting surplus food donors with recipients facing food insecurity.</li>
-                        <li>Implemented features such as donor and receiver registration functionalities.</li>
-                        <li>Streamlined food listing creation and management processes.</li>
-                        <li>Efficient handling of donation requests.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h5>Bank Management System:</h5>
-                    <ul>
-                        <li>Developed a Python program for basic banking operations, including account creation, transaction processing, and balance management.</li>
-                        <li>Implemented customer and account management functionalities, transaction processing, and error handling.</li>
-                        <li>Key Features:
-                            <ul>
-                                <li>Create and manage customer accounts</li>
-                                <li>Perform deposit and withdrawal transactions</li>
-                                <li>Check account balances</li>
-                                <li>Handle invalid transaction types and insufficient funds scenarios</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-            <h4>Education:</h4>
-            <ul>
-                <li>B.TECH | G H Raisoni College of Engineering (Electrical) CGPA: 7.8 | (AUG ‘19 - JUL ‘2023)</li>
-                <li>XII (STATE) | Sindhi Hindi Jr College, Nagpur 66% | (2018)</li>
-                <li>X(STATE) | St M.B High School 76.08% | (2016)</li>
-            </ul>
-            <h4>Languages:</h4>
-            <ul>
-                <li>English</li>
-                <li>Hindi</li>
-                <li>Marathi</li>
-            </ul>
-            <h4>Certificates:</h4>
-            <ul>
-                <li>Power-Bi - Jatin Shah</li>
-            </ul>
-        </div>
-        
-        <!-- Resume project -->
-        <div class="project">
-            <h3>Resume Project</h3>
-            <p>Developed a dynamic and visually appealing resume using HTML, CSS, and Bootstrap.</p>
-            <p>Key Features:</p>
-            <ul>
-                <li>Responsive design for various screen sizes.</li>
-                <li>Bootstrap components and styles for layout and styling.</li>
-                <li>Custom CSS for additional styling and effects.</li>
-                <li>Organized resume content including experience, skills, projects, education, languages, and certificates.</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Resume section -->
+    <!-- Your resume section code here -->
 
     <!-- Image container -->
-    <div class="image-container" style="bottom: 10%;">
-        <img src="https://via.placeholder.com/400x200" alt="Image 2">
-    </div>
+    <!-- Your image container code here -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <!-- Your script tags here -->
 </body>
 </html>
