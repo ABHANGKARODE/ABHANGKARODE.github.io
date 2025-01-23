@@ -3,70 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Your CSS styles */
-    </style>
+    <title>Portfolio - Abhang Karode</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <!-- Your navbar code here -->
-
-    <!-- Flying comets container -->
-    <div class="comet-container"></div>
-
-    <!-- Image containers -->
-    <!-- Your image container code here -->
-
-    <!-- Projects section -->
-    <section id="projects" class="container mt-5">
-        <h2 class="text-center mb-4">Projects</h2>
-        <!-- Project 1: Waste Food Management System -->
-        <div class="project mb-5">
-            <h3>Waste Food Management System</h3>
-            <p>Lead the development of a Food Donation Management System.</p>
-            <p>Oversaw the creation of a comprehensive platform connecting surplus food donors with recipients facing food insecurity.</p>
-            <p>Implemented features such as donor and receiver registration functionalities.</p>
-            <p>Streamlined food listing creation and management processes.</p>
-            <p>Efficient handling of donation requests.</p>
-        </div>
-
-        <!-- Project 2: Bank Management System -->
-        <div class="project mb-5">
-            <h3>Bank Management System</h3>
-            <p>Developed a Python program for basic banking operations, including account creation, transaction processing, and balance management.</p>
-            <p>Key Features:</p>
+    <header>
+        <nav>
             <ul>
-                <li>Create and manage customer accounts</li>
-                <li>Perform deposit and withdrawal transactions</li>
-                <li>Check account balances</li>
-                <li>Handle invalid transaction types and insufficient funds scenarios</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Project 3: Data Analysis - Teacher Distribution -->
-        <div class="project mb-5">
-            <h3>Data Analysis - Teacher Distribution</h3>
-            <p>Led a project as a Data Analyst to analyze teacher distribution across government, private, and other sectors within a specific state.</p>
-            <p>Key Contributions:</p>
-            <ul>
-                <li>Conducted in-depth analysis to determine the optimal number of teachers required for each sector, considering factors such as gender and professional status.</li>
-                <li>Utilized pivot tables in Excel to efficiently organize and analyze large datasets containing information on teachers from various sectors.</li>
-                <li>Leveraged pivot tables to generate insights into teacher distribution based on factors such as gender and professional status across government, private, and other sectors.</li>
-                <li>Conducted detailed analysis using pivot tables to identify trends and patterns in teacher allocation within the specific state.</li>
-                <li>Presented pivot table-generated insights through visualizations and reports.</li>
-            </ul>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I'm Abhang Karode, a passionate learner and aspiring Data Scientist.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
         </div>
     </section>
 
-    <!-- Resume section -->
-    <!-- Your resume section code here -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3><a href="flowchart.html">Student Course Recommendation System</a></h3>
+            <p>A recommendation system to suggest courses based on job market insights and student skills.</p>
+        </div>
+        <div class="project">
+            <h3>Real-Time Movie Recommender</h3>
+            <p>Movie recommendation system based on user preferences, utilizing machine learning algorithms.</p>
+        </div>
+    </section>
 
-    <!-- Image container -->
-    <!-- Your image container code here -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <!-- Scripts -->
-    <!-- Your script tags here -->
+    <footer>
+        <p>&copy; 2025 Abhang Karode</p>
+    </footer>
 </body>
 </html>
