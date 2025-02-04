@@ -3,68 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Abhang Karode</title>
-    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Abhang Karode - Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1722F7, #F2295B);
+            text-align: center;
+            color: #E0E0E0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #00ff99;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff3399;
+        }
+        .skills, .projects {
+            text-align: left;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #1f1f1f;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio! I'm Abhang Karode, a passionate learner and aspiring Data Scientist.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
+    <div class="container">
+        <img src="profile.jpg" alt="Abhang Karode" class="profile-img">
+        <h1>Abhang Karode</h1>
+        <h2>Data Analyst</h2>
+        
         <div class="skills">
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="progress-bar" style="width: 90%;"></div>
-            </div>
-            <div class="skill">
-                <h3>Machine Learning</h3>
-                <div class="progress-bar" style="width: 80%;"></div>
-            </div>
-            <div class="skill">
-                <h3>Web Development</h3>
-                <div class="progress-bar" style="width: 75%;"></div>
-            </div>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                <li>SQL (PostgreSQL, MySQL)</li>
+                <li>Data Visualization</li>
+                <li>Web Scraping</li>
+                <li>Machine Learning Basics</li>
+            </ul>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3><a href="flowchart.html">Student Course Recommendation System</a></h3>
-            <p>A recommendation system to suggest courses based on job market insights and student skills.</p>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Student Course Recommendation System</li>
+                <li>Job Market Visualization using Web Scraping</li>
+                <li>Data-Driven Decision Making Dashboard</li>
+                <li>SQL-Based Data Analysis Project</li>
+            </ul>
         </div>
-        <div class="project">
-            <h3>Real-Time Movie Recommender</h3>
-            <p>Movie recommendation system based on user preferences, utilizing machine learning algorithms.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Abhang Karode</p>
-    </footer>
+    </div>
 </body>
 </html>
