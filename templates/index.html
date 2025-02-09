@@ -1,0 +1,433 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhang Karode - Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1722F7, #F2295B);
+            text-align: center;
+            color: #E0E0E0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #00ff99;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff3399;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .skills {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .skills h2 {
+            margin-bottom: 20px;
+            color: #00ff99;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: #444;
+            padding: 15px 25px;
+            border-radius: 30px;
+            color: #f0f0f0;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 180px;
+            text-align: center;
+        }
+
+        .skill-item:hover {
+            background-color: #00ff99;
+            color: #1722F7;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #333;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1s forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card h3 {
+            color: #00ff99;
+        }
+
+        .card p {
+            color: #f0f0f0;
+            font-size: 14px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(0);
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.5);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-item {
+                width: 70%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.webp" alt="Abhang Karode" class="profile-img">
+        <h1>Abhang Karode</h1>
+        <h2>Data Analyst</h2>
+        
+        <div class="summary">
+            <p>As a passionate Data Analyst fresher, I specialize in Python, SQL, and Data Visualization. I am eager to leverage my skills in real-world projects to derive meaningful insights and support data-driven decision-making.</p>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Python (Pandas, NumPy, Matplotlib, Seaborn)</div>
+                <div class="skill-item">SQL (PostgreSQL, MySQL)</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">Web Scraping</div>
+                <div class="skill-item">Machine Learning Basics</div>
+            </div>
+        </div>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <h3>Student Course Recommendation System</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This system analyzes students' skills, preferences, and job market trends to recommend relevant courses for enhancing their career prospects. By using Python and SQL, it tracks skill demand and suggests courses accordingly to align with emerging industry trends.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Job Market Visualization using Web Scraping</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This project leverages web scraping techniques to extract data from job listings on popular job portals. It then processes this data to visualize trends, such as which skills are in demand, which companies are hiring, and job availability across different regions.</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Data-Driven Decision Making Dashboard</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>A comprehensive dashboard designed to help business analysts and managers visualize key business metrics such as sales, customer acquisition, and retention. This project integrates interactive charts using Python’s Matplotlib and Seaborn libraries to drive insights for better decision-making.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>SQL-Based Data Analysis Project</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This project focuses on querying large datasets using SQL to uncover valuable insights. Through various complex queries and joins, the analysis helps organizations understand customer behavior, identify trends, and optimize operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhang Karode - Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1722F7, #F2295B);
+            text-align: center;
+            color: #E0E0E0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #00ff99;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ff3399;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .skills {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .skills h2 {
+            margin-bottom: 20px;
+            color: #00ff99;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: #444;
+            padding: 15px 25px;
+            border-radius: 30px;
+            color: #f0f0f0;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 180px;
+            text-align: center;
+        }
+
+        .skill-item:hover {
+            background-color: #00ff99;
+            color: #1722F7;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .run-button {
+            background-color: #00ff99;
+            border: none;
+            color: #1722F7;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .run-button:hover {
+            background-color: #1722F7;
+            color: #00ff99;
+        }
+
+        .projects {
+            margin-top: 50px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #333;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1s forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card h3 {
+            color: #00ff99;
+        }
+
+        .card p {
+            color: #f0f0f0;
+            font-size: 14px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(0);
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.5);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-item {
+                width: 70%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='profile.webp') }}" alt="Profile Image">
+        <h1>Abhang Karode</h1>
+        <h2>Data Analyst</h2>
+        
+        <div class="summary">
+            <p>As a passionate Data Analyst fresher, I specialize in Python, SQL, and Data Visualization. I am eager to leverage my skills in real-world projects to derive meaningful insights and support data-driven decision-making.</p>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Python (Pandas, NumPy, Matplotlib, Seaborn)</div>
+                <div class="skill-item">SQL (PostgreSQL, MySQL)</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">Web Scraping</div>
+                <div class="skill-item">Machine Learning Basics</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="{{ url_for('run_streamlit') }}">
+                <button class="run-button">Click  Here to Run Project</button>
+            </a>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Student Course Recommendation System</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This system analyzes students' skills, preferences, and job market trends to recommend relevant courses for enhancing their career prospects. By using Python and SQL, it tracks skill demand and suggests courses accordingly to align with emerging industry trends.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Job Market Visualization using Web Scraping</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This project leverages web scraping techniques to extract data from job listings on popular job portals. It then processes this data to visualize trends, such as which skills are in demand, which companies are hiring, and job availability across different regions.</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Data-Driven Decision Making Dashboard</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>A comprehensive dashboard designed to help business analysts and managers visualize key business metrics such as sales, customer acquisition, and retention. This project integrates interactive charts using Python’s Matplotlib and Seaborn libraries to drive insights for better decision-making.</p>
+                </div>
+
+                <div class="card">
+                    <h3>SQL-Based Data Analysis Project</h3>
+                    <p class="card-title">Summary:</p>
+                    <p>This project focuses on querying large datasets using SQL to uncover valuable insights. Through various complex queries and joins, the analysis helps organizations understand customer behavior, identify trends, and optimize operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
